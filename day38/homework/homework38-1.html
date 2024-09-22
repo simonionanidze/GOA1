@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Video and Audio Example</title>
+    <link rel="stylesheet" href="stylecss.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Website with Video and Audio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to our Website!</h2>
+            <p>This is a sample website showcasing HTML5 video and audio elements.</p>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <h2>Featured Video</h2>
+            <video controls>
+                <source src="თქვენი შვილი ცუდად სწავლობს და ჩაკეტილია_ მაშინ ნახეთ ეს ვიდეო (1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="audio">
+        <div class="container">
+            <h2>Featured Audio</h2>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                
+            </audio>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor ac tortor ullamcorper, sit amet efficitur justo varius. Duis sed est non risus consequat interdum.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Fill out the form below to get in touch:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+
+</body>
+</html>
