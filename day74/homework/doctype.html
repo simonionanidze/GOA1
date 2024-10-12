@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Document</title>
+    <style>
+        
+        #unique-paragraph {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p id="unique-paragraph"></p>
+    <p>.</p>
+
+    <script>
+        
+        const uniqueParagraph = document.getElementById('unique-paragraph');
+        
+        
+        uniqueParagraph.textContent = 'შეგეცვალა შიგთავსი და ახლა ფერი წითელი იქნება.';
+
+        
+        uniqueParagraph.style.color = 'red';
+    </script>
+</body>
+</html>

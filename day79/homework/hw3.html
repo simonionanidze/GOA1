@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Character Input</title>
+    <style>
+        .counter {
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="textarea">Message:</label>
+        <textarea id="textarea" name="textarea" maxlength="200"></textarea>
+        <div id="charCount" class="counter">0/200 characters</div>
+    </form>
+    <script>
+        const textarea = document.getElementById('textarea');
+        const charCount = document.getElementById('charCount');
+        const maxChars = 200;
+
+        textarea.addEventListener('input', () => {
+            const currentLength = textarea.value.length;
+            charCount.textContent = `${currentLength}/${maxChars} characters`;
+        });
+    </script>
+</body>
+</html>
